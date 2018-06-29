@@ -6,20 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Emergency Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 
 <body>
     <div class="mainHeader">
         <h1>Emergency Contact</h1>
     </div>
-    <div class="addContactMainForm">
-        <form action="">
-            <h3>Name</h3>
-            <input type="text" name="name" id="name" required>
-            <h3>Relationship</h3>
-            <select name="Relationship" id=""></select>
+    <div class="container is-primary">
+        <form action="" method="POST">
+            <label for="Name">Name</label>
+            <input type="text" name="Name" id="NameTxtBox">
+            <label for="Relationship">Relationship</label>
+            <select name="Relationship" id="RelationshipDropDown">
+                <option value="Brother">Brother</option>
+                <option value="Sister">Sister</option>
+                <option value="Daughter">Daughter</option>
+                <option value="Father">Father</option>
+                <option value="Friend">Friend</option>
+                <option value="Husband">Husband</option>
+                <option value="Wife">Wife</option>
+                <option value="Son">Son</option>
+                <option value="Fiance">Fiance</option>
+                <option value="Fiancee">Fiancee</option>
+            </select>
         </form>
     </div>
 </body>
